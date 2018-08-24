@@ -64,7 +64,9 @@ def delete_intent(project_id, intent_id):
 
 if __name__ == '__main__':
     try :
-        create_intent('test1-98fad','Client_Intent_test', ['Train1','Train2','Train34'],['Resp1','Resp2','Resp34'])
+        # add the project id
+        create_intent('','Client_Intent_test', ['Train1','Train2','Train34'],['Resp1','Resp2','Resp34'])
     except :
-        delete_intent('test1-98fad', 'c291a589-854e-4847-a988-f2f26576b61c')
+        # add the project id and the intent id
+        delete_intent('', '')
         print 'Intent Deleted..'
